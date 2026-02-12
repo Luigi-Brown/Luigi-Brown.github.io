@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeny the Blox</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .float-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .float-up {
+            position: absolute;
+            bottom: -200px;
+            animation-name: floatUp;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;        /* fully invisible at the bottom */
+  }
+  10% {
+    opacity: 1;        /* fade in quickly within the first 10% of travel */
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Orbs -->
+    <div class="float-container">
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+        <img src="Images/Background Orb.png" class="float-up" />
+    </div>
+
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Greeny the Blox</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/index.html">News</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex-container">
+            <img height="400px" draggable="false" src="Images/GTB Logo Outline.png">
+        </div>
+    </header>
+
+    <div class="game-container">
+        <h1>Wishlist now on Steam!</h1>
+    </div>
+
+    <div class="steam-logo">
+        <a href="https://store.steampowered.com/app/4206870/Greeny_The_Blox/">
+            <img src="Images/Steam Logo Button.png" draggable="false" height="100">
+        </a>
+    </div>
+
+
+    <div class="dash">
+    <hr>
+    </div>
+
+    <div class="trailer-text">
+        <h1>Watch the trailer!</h1>
+    </div>
+
+    <div class="trailer">
+        <iframe width="768" height="432" src="https://www.youtube.com/embed/TnZrYrhepGI?si=1uObJdWoEXhUGK0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+   <div class="dash">
+    <hr>
+    </div>
+
+    <div class="copyright">
+        <h1>
+           Greeny the Blox © Luigi Brown 2026. All rights reserved.
+        </h1>
+    </div>
+
+    <div class="steam-copyright">
+        <h1>
+           Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.
+        </h1>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imgs = document.querySelectorAll('.float-up');
+
+            imgs.forEach(function (img) {
+                const randomX = Math.random() * 100;
+                img.style.left = randomX + '%';
+
+                const size = 150 + Math.random() * 200;
+                img.style.width = size + 'px';
+
+                const duration = 6 + Math.random() * 6;
+                img.style.animationDuration = duration + 's';
+
+                const delay = Math.random() * 5;
+                img.style.animationDelay = delay + 's';
+            });
+        });
+    </script>
+
+</body>
+</html>
