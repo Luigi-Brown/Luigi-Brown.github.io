@@ -47,6 +47,7 @@ body{
     
     overflow-x: hidden !important;
     padding: -2em;
+    background: #0e0033;
     background-image: linear-gradient(black, #0e0033);
     height: 100%;
     overflow: auto;
@@ -96,6 +97,7 @@ border-radius: 1em;
 }
 
 .game-container {
+    text-align: center;
     display: flex;
     justify-content: center;
     font-size: calc(0.5em + 1vw);
@@ -113,6 +115,7 @@ border-radius: 1em;
 }
 
 .trailer-text {
+    text-align: center;
     display: flex;
     justify-content: center;
     font-size: calc(0.5em + 1vw);
@@ -134,7 +137,7 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
 
 .auto-resizable-iframe > div {
   position: relative;
-  padding-bottom: 68%;
+  padding-bottom: 56%;
   height: 0px;
 }
 
@@ -144,7 +147,6 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
   left: 0px;
   width: 100%;
   height: 100%;
-  padding: 100px;
 }
 
 
@@ -155,6 +157,7 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
 
 .copyright {
     display: flex;
+    text-align: center;
     justify-content: center;
     padding: 10px;
     font-size: calc(0.3em + 0.2vw);
@@ -162,7 +165,7 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
 }
 
 .steam-copyright {
-    width: 700px;
+    width: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
