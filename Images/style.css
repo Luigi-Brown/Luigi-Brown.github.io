@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --base-color: #0e0033;
+    --text-color: #ffffff;
+    --primary-color: #00ff00;
+    --secondary-color: #e034c1;
+
+
+
+}
+
+
+/* Floating orb background */
+#orb-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.orb {
+    position: absolute;
+    bottom: -150px;
+    opacity: 0.7;
+    pointer-events: none;
+    will-change: transform;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Audiowide;
+    color: var(--text-color);
+    overflow: hidden;
+    height: 100%;
+}
+
+body{
+    
+    overflow-x: hidden !important;
+    padding: -2em;
+    background-image: linear-gradient(black, #0e0033);
+    height: 100%;
+    overflow: auto;
+}
+
+h1, h2, h3 {
+font-family: Orbitron;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1200px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+margin: auto;
+width: min(75rm, 100%);
+padding: min(2em, 15%);
+border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: -3em;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    font-size: calc(0.5em + 1vw);
+}
+
+.steam-logo {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+
+}
+
+.dash{
+    padding: 100px;
+}
+
+.trailer-text {
+    display: flex;
+    justify-content: center;
+    font-size: calc(0.5em + 1vw);
+    padding: 50px
+}
+
+/*
+Source - https://stackoverflow.com/a/17465040
+Posted by Björn Blomqvist, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-12, License - CC BY-SA 4.0
+*/
+
+.auto-resizable-iframe {
+  max-width: 1280px;
+  margin: 0px auto;
+  max-height: 720;
+}
+
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 68%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
+
+
+
+.dash2{
+    padding: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: calc(0.3em + 0.2vw);
+
+}
+
+.steam-copyright {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: calc(0.3em + 0.2vw);
+    padding-bottom: 40px;
+}
