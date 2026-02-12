@@ -98,46 +98,75 @@ border-radius: 1em;
 .game-container {
     display: flex;
     justify-content: center;
+    font-size: calc(0.5em + 1vw);
 }
 
 .steam-logo {
     display: flex;
     justify-content: center;
     margin: 2em;
+
 }
 
 .dash{
-    margin: 10em;
+    padding: 100px;
 }
 
 .trailer-text {
     display: flex;
     justify-content: center;
-    margin: 10em;
+    font-size: calc(0.5em + 1vw);
+    padding: 50px
 }
 
-.trailer {
-    display: flex;
-    justify-content: center;
-    margin: -6em;
+/*
+Source - https://stackoverflow.com/a/17465040
+Posted by Björn Blomqvist, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-12, License - CC BY-SA 4.0
+*/
+
+.auto-resizable-iframe {
+  max-width: 1280px;
+  margin: 0px auto;
+  max-height: 720;
 }
+
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 68%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
+
+
 
 .dash2{
-    display: flex;
-    justify-content: center;
-
+    padding: 20px;
 }
 
 .copyright {
     display: flex;
     justify-content: center;
-    margin: -120px;
-    font-size: 8px;
+    padding: 10px;
+    font-size: calc(0.3em + 0.2vw);
+
 }
 
 .steam-copyright {
+    width: 700px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin: 120px;
-    font-size: 8px;
+    text-align: center;
+    font-size: calc(0.3em + 0.2vw);
+    padding-bottom: 40px;
 }
