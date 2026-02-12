@@ -111,7 +111,7 @@ border-radius: 1em;
 }
 
 .dash{
-    padding: 100px;
+    padding: 30px;
 }
 
 .trailer-text {
@@ -119,7 +119,7 @@ border-radius: 1em;
     display: flex;
     justify-content: center;
     font-size: calc(0.5em + 1vw);
-    padding: 50px
+    padding: 30px
 }
 
 /*
@@ -129,9 +129,10 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
 */
 
 .auto-resizable-iframe {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0px auto;
-  max-height: 720;
+  max-height: 540;
+  padding: 30px;
 }
 
 
@@ -147,12 +148,14 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
   left: 0px;
   width: 100%;
   height: 100%;
+
 }
 
 
 
 .dash2{
     padding: 20px;
+    
 }
 
 .copyright {
