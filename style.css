@@ -6,9 +6,6 @@
     --text-color: #ffffff;
     --primary-color: #00ff00;
     --secondary-color: #e034c1;
-
-
-
 }
 
 
@@ -54,7 +51,7 @@ body{
 }
 
 h1, h2, h3 {
-font-family: Orbitron;
+    font-family: Orbitron;
 }
 
 nav {
@@ -92,7 +89,7 @@ header {
     width: min(75rm, 100%);
     padding: 10px;
     z-index: 10000;
-    font-size: 23px;
+    font-size: calc(10px + 1vw);
 }
 
 .headerBG {
@@ -100,11 +97,12 @@ header {
     color: rgba(0, 0, 0, 0);
     top: 0;
     background-color: black;
-    margin-top: -120px;
-    padding: 2em;
+    margin-top: -125px;
+    padding: 50px;
     z-index: 200;
     display: flex;
     justify-content: center;
+    font-size: 25px;
 }
 
 .flex-container {
@@ -145,25 +143,25 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
 */
 
 .auto-resizable-iframe {
-  max-width: 960px;
-  margin: 0px auto;
-  max-height: 540;
-  padding: 30px;
+    max-width: 960px;
+    margin: 0px auto;
+    max-height: 540;
+    padding: 30px;
 }
 
 
 .auto-resizable-iframe > div {
-  position: relative;
-  padding-bottom: 56%;
-  height: 0px;
+    position: relative;
+    padding-bottom: 56%;
+    height: 0px;
 }
 
 .auto-resizable-iframe iframe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -191,4 +189,45 @@ Retrieved 2026-02-12, License - CC BY-SA 4.0
     text-align: center;
     font-size: calc(0.3em + 0.2vw);
     padding-bottom: 40px;
+}
+
+div.outer{
+    position:relative;
+    overflow:auto;
+    float:left;
+    z-index:0;
+}
+div.resize{
+    position:relative;
+    width:250px;
+    height:300px;
+    resize: both;
+    overflow:hidden;
+    z-index:10;
+    border:1px solid red;
+}
+
+div.inner{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;left:0;
+    box-shadow: inset 0 0 100px #000;
+    overflow: hidden;
+    z-index: 9;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Vignette */
+.vignette {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.8) inset;
 }

@@ -47,6 +47,8 @@
 
 <body>
 
+<div class="vignette"></div>
+
     <!-- Background Orbs -->
     <div class="float-container">
         <img src="Images/Background Orb.png" class="float-up" />
@@ -116,13 +118,13 @@
         <h1>Watch the trailer!</h1>
     </div>
 
-<div class="auto-resizable-iframe">
-  <div>
-    <iframe width = 768px height = 432px frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/TnZrYrhepGI?si=gCiE8yQaUWZqjYEo"></iframe>
-  </div>
-</div>
+    <div class="auto-resizable-iframe">
+        <div>
+            <iframe width = 768px height = 432px frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/TnZrYrhepGI?si=gCiE8yQaUWZqjYEo"></iframe>
+        </div>
+    </div>
 
-   <div class="dash2">
+    <div class="dash2">
     <hr>
     </div>
 
@@ -159,18 +161,6 @@
             });
         });
     </script>
-
-    <script>
-document.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (window.scrollY > 100) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-</script>
-
-
+    
 </body>
 </html>
