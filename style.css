@@ -58,9 +58,12 @@ font-family: Orbitron;
 }
 
 nav {
+    padding: 0;
+    height: 0px;
     margin: 1em auto 3em auto;
     width: min(1200px, 100%);
 }
+
 
 nav ul {
     display: flex;
@@ -82,18 +85,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
-header, section {
-margin: auto;
-width: min(75rm, 100%);
-padding: min(2em, 15%);
-border-radius: 1em;
+header {
+    position: sticky;
+    top: 0px;
+    margin: auto;
+    width: min(75rm, 100%);
+    padding: 10px;
+    z-index: 10000;
+    font-size: 23px;
+}
+
+.headerBG {
+    width: 120%;
+    color: rgba(0, 0, 0, 0);
+    top: 0;
+    background-color: black;
+    margin-top: -120px;
+    padding: 2em;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
-    padding: 20px;
-    margin: -3em;
+    padding-top: -20px;
 }
 
 .game-container {
@@ -107,7 +124,6 @@ border-radius: 1em;
     display: flex;
     justify-content: center;
     margin: 2em;
-
 }
 
 .dash{

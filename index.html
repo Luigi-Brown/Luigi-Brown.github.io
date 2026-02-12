@@ -86,10 +86,16 @@
             </ul>
         </nav>
 
+        <div class="headerBG">
+            <p>e</p>
+        </div>
+       
+    </header>
+
         <div class="flex-container">
             <img style=" max-width: 600px; height: 100%; width: 100%; object-fit: contain" draggable="false" src="Images/GTB Logo Outline.png">
         </div>
-    </header>
+
 
     <div class="game-container">
         <h1>Wishlist now on Steam!</h1>
@@ -97,7 +103,7 @@
 
     <div class="steam-logo">
         <a href="https://store.steampowered.com/app/4206870/Greeny_The_Blox/">
-            <img style=" max-width: calc(90px + 12vw);; height: 100%; width: 100%; object-fit: contain" draggable="false" src="Images/Steam Logo Button.png">
+            <img style=" max-width: calc(100px + 5vw);; height: 100%; width: 100%; object-fit: contain" draggable="false" src="Images/Steam Logo Button.png">
         </a>
     </div>
 
@@ -153,6 +159,18 @@
             });
         });
     </script>
+
+    <script>
+document.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 100) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
+
 
 </body>
 </html>
